@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("enetr the first number:");
+    scanf("%d",&a);
+    printf("enter the second number:");
+    scanf("%d",&b);
+    if(a==b)
+    {
+        printf("%d the number is equal",a,b);
+    }
+    else
+    {
+        printf("%d the number is not equal",a,b);
+    }
+    return 0;
+}
