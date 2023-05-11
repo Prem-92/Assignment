@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int s1,s2,s3,s4,s5,sum=0;
+    printf("enter first subject:");
+    scanf("%d",&s1);
+    printf("enter second subject:");
+    scanf("%d",&s2);
+    printf("enter third subject:");
+    scanf("%d",&s3);
+    printf("enter fourth subject:");
+    scanf("%d",&s4);
+    printf("enter fifth subject:");
+    scanf("%d",&s5);
+    sum=((s1+s2+s3+s4+s5)*100)/500;
+    printf(" sum and percentage marks %d",sum);
+    return 0;
+}
