@@ -1,0 +1,49 @@
+import java.util.*;
+public class heart {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Number of lines:");
+        int n=sc.nextInt();
+        int star=n-8;
+        int space=2;
+        int spacee=5;
+        int line=1;
+        int s=0;
+        int starr=2*n-7;
+        while (line<=n){
+            if(line<=3){
+            for(int i=1;i<=space;i++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=star;j++){
+                System.out.print("*");
+            }
+            for(int k=1;k<=spacee;k++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=star;j++){
+                System.out.print("*");
+            }
+            star+=2;
+            space--;
+            spacee-=2;
+            }
+            else if(line>3){
+                for(int i=1;i<=s;i++){
+                    System.out.print(" ");
+                }
+            for(int l=1;l<=starr;l++){
+                System.out.print("*");
+            }
+            for(int i=1;i<=s;i++){
+                System.out.print(" ");
+            }
+            s++;
+            starr-=2;
+            }
+            System.out.println();
+            line++;
+        }
+    }
+    
+}
