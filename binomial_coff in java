@@ -1,0 +1,28 @@
+import java.util.*;
+public class bionomial {
+    public static int factorial(int n){
+        int fact=1;
+        for(int i=1;i<=n;i++){
+            fact=fact*i;
+        }
+        return fact;
+    
+    }
+    public static int bionomiall(int n,int r){
+        int a=factorial(n);
+        int b=factorial(r);
+        int c=factorial(n-r);
+        int value=a/(b*c);
+        return value;
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Your N value:");
+        int n=sc.nextInt();
+        System.out.println("Enter Your R value:");
+        int r=sc.nextInt();
+        int new_value=bionomiall(n, r);
+        System.out.println("The new value is:"+new_value);
+    }
+    
+}
